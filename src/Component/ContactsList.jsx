@@ -10,6 +10,7 @@ const ContactsList = ({contacts, deleteHandler}) => {
   return (
     <div className='ui celled list'>
       <h2>Contact List</h2>
+      <button className='ui button blue'>Add Contact</button>
       {
         contacts.map(contact => (
           <ContactCard contact={contact} getIdElement={getIdElement} key={contact.id} />
